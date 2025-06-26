@@ -1,0 +1,13 @@
+{
+    "project_name": "Jiobi_music",
+    "version": "1.0.0",
+    "creation_date": "20250626_161319",
+    "settings": {
+        "output_directory": "./output_music",
+        "default_bpm": 120
+    },
+    "recent_files": [
+        "music1.wav",
+        "music2.wav"
+    ]
+}

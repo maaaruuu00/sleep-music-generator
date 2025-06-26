@@ -2,6 +2,18 @@
 
 import sys
 import os
+
+# scripts 폴더가 현재 스크립트(sleep_music_generator_gui.py)와 같은 레벨에 있다고 가정
+script_dir = os.path.dirname(__file__)
+sys.path.append(os.path.join(script_dir, 'scripts'))
+
+import utils
+# 이제 utils.py의 함수들을 utils.함수명() 형태로 사용할 수 있습니다.
+# 예: timestamp = utils.get_current_timestamp()
+#     config_data = utils.load_json('config.json')
+
+# --- 이 아래에 기존 sleep_music_generator_gui.py의 코드를 유지합니다 ---
+
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QLabel, QPushButton, QVBoxLayout, QHBoxLayout,
     QComboBox, QTextEdit, QFileDialog, QProgressBar
